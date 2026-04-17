@@ -15,10 +15,5 @@
   "routerOnly": false,
   "version": 1,
   "framework": "react",
-  "chosenAddOns": [
-    "drizzle",
-    "form",
-    "table",
-    "better-auth"
-  ]
+  "chosenAddOns": ["drizzle", "form", "table", "better-auth"]
 }
