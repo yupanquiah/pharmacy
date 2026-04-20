@@ -28,13 +28,7 @@ export const Route = createRootRoute({
       },
     ],
   }),
-  shellComponent: ({ children }) => {
-    return (
-      <RootDocument>
-        <TooltipProvider>{children}</TooltipProvider>
-      </RootDocument>
-    )
-  },
+  shellComponent: RootDocument,
 })
 
 function RootDocument({ children }: { children: React.ReactNode }) {
@@ -46,7 +40,7 @@ function RootDocument({ children }: { children: React.ReactNode }) {
       </head>
       <body className="font-sans wrap-anywhere antialiased selection:bg-[rgba(79,184,178,0.24)]">
         <Toaster position="top-right" />
-        {children}
+        <TooltipProvider>{children}</TooltipProvider>
         <TanStackDevtools
           config={{
             position: 'bottom-right',
