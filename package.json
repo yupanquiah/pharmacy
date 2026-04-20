@@ -2,9 +2,6 @@
   "name": "pharmacy",
   "private": true,
   "type": "module",
-  "imports": {
-    "#/*": "./src/*"
-  },
   "scripts": {
     "build": "vite build",
     "db:generate": "drizzle-kit generate",
