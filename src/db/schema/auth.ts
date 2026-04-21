@@ -1,6 +1,6 @@
 import { relations } from 'drizzle-orm'
 import { index, pgTable, text, timestamp } from 'drizzle-orm/pg-core'
-import { user } from '@/db/schema/user'
+import { user } from '~/db/schema/user'
 
 export const session = pgTable(
   'session',
