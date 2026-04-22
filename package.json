@@ -76,6 +76,11 @@
     "*.{js,jsx,ts,tsx,mjs,cjs}": "pnpm run lint",
     "*": "oxfmt --no-error-on-unmatched-pattern"
   },
+  "engines": {
+    "node": ">=25.0.0",
+    "pnpm": ">=10.33.0"
+  },
+  "packageManager": "pnpm@10.33.0",
   "pnpm": {
     "onlyBuiltDependencies": [
       "esbuild",
