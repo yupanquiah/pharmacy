@@ -122,9 +122,9 @@
     @apply border-border outline-ring/50;
   }
   body {
-    @apply bg-background text-foreground;
+    @apply h-full bg-background font-sans wrap-anywhere text-foreground antialiased selection:bg-[rgba(79,184,178,0.24)];
   }
   html {
-    @apply font-sans;
+    @apply h-full font-sans;
   }
 }
